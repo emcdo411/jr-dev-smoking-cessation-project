@@ -1,5 +1,26 @@
 # 🧠 AI Engineering Prompt: VA Smoking Cessation Tracker for Junior Devs
 
+![GitHub Repo Size](https://img.shields.io/github/repo-size/your-username/va-smoking-tracker?style=for-the-badge)
+![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Python%20%7C%20R%20%7C%20Shiny-green?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+
+---
+
+## 📘 Table of Contents
+
+- [🎯 Objective](#-objective)
+- [📦 What the AI Should Generate](#-what-the-ai-should-generate)
+- [📂 Folder Structure](#-folder-structure-to-generate)
+- [🐍 Python Script](#-python-script-veterans_data_simulatedpy)
+- [📊 RShiny Files](#-rshiny-files)
+- [🧭 Working Directory Script](#-r-working-directory-script)
+- [✅ Run Instructions](#-run-instructions-in-readmemd)
+- [🔐 Error Handling](#-error-handling)
+- [🤝 Bonus Features](#-bonus-features-optional)
+- [🧱 Why This Prompt Matters](#-why-this-prompt-matters)
+
+---
+
 ## 🎯 Objective
 Help a junior developer build a working MVP for a healthcare-style app using **Python + R + Shiny**, without requiring a real SQL Server setup.
 
@@ -19,7 +40,7 @@ Use this input to correctly set paths in:
 
 ---
 
-### 📂 2. Folder Structure to Generate
+## 📂 Folder Structure to Generate
 
 ```
 VaSmokingCessationApp/
@@ -37,7 +58,7 @@ VaSmokingCessationApp/
 
 ---
 
-### 🐍 3. Python Script: `veterans_data_simulated.py`
+## 🐍 Python Script: `veterans_data_simulated.py`
 - Creates 10+ records with these fields:
   - `id`, `name`, `age`, `enrollment_date`, `progress_score`, `smoking_status`, `coaching_notes`
 - Saves JSON file to `data/veterans_data.json`
@@ -45,14 +66,14 @@ VaSmokingCessationApp/
 
 ---
 
-### 📊 4. RShiny Files
+## 📊 RShiny Files
 - `ui_dashboard.R` displays progress using `plotly`
 - `server_dashboard.R` reads and validates JSON file
 - `app.R` launches the dashboard using `shiny::runApp()`
 
 ---
 
-### 🧭 5. R Working Directory Script
+## 🧭 R Working Directory Script
 `set_wd.R` should include:
 ```r
 setwd("C:/Users/Veteran/Documents/VaSmokingCessationApp")
@@ -61,7 +82,7 @@ setwd("C:/Users/Veteran/Documents/VaSmokingCessationApp")
 
 ---
 
-### ✅ 6. Run Instructions in README.md
+## ✅ Run Instructions in README.md
 
 ```markdown
 ## VA Smoking Cessation Tracker
@@ -74,15 +95,11 @@ setwd("C:/Users/Veteran/Documents/VaSmokingCessationApp")
 ### 🧪 Requirements
 - Python: `json`, `os`, `random`
 - R: `shiny`, `plotly`, `jsonlite`
-
-### 👀 What You’ll See
-- Graphs of veteran progress
-- Coaching notes or smoking status
 ```
 
 ---
 
-### 🔐 7. Error Handling
+## 🔐 Error Handling
 Ensure:
 - JSON has no missing fields
 - App won’t crash if data is missing — show an alert
